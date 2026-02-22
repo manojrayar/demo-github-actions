@@ -1,6 +1,6 @@
 name: 01 Hello Workflow
 
-on: pull_request
+on: push
 
 jobs:
   hello-1:
