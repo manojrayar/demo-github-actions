@@ -1,10 +1,20 @@
 name: 01 Hello Workflow
 
-on: push
+on: pull_request
 
 jobs:
-  hello:
-    runs-on: ubuntu-latest
+  hello-1:
+    runs-on: self-hosted
     steps:
       - name: Say hello
-        run: echo "Hello from GitHub Actions Training Repo"
+        run: echo "Hello from GitHub Actions Training Repo-1"
+  hello-2:
+    runs-on: self-hosted
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions Training Repo-2"
+  hello-3:
+    runs-on: self-hosted
+    steps:
+      - name: Say hello
+        run: echo "Hello from GitHub Actions Training Repo-3"
